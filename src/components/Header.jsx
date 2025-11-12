@@ -2,23 +2,53 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="d-flex justify-content-between align-items-center p-3 mb-3 border-bottom shadow-sm fixed-top bg-white">
-      <span className="fs-2 fw-medium">
-        <i className="bi bi-globe text-primary fs-1 me-2"></i>GlobalLink
-      </span>
+    <nav className="navbar navbar-expand-lg bg-white fixed-top shadow-sm border-bottom">
+      <div className="container-fluid">
+        <a
+          className="navbar-brand fs-2 fw-medium d-flex align-items-center"
+          href="#"
+        >
+          <i className="bi bi-globe text-primary fs-1 me-2"></i>GlobalLink
+        </a>
 
-      <div className="d-flex gap-4">
-        <a href="#Inicio" className="fs-5 text-decoration-none text-black">
-          Início
-        </a>
-        <a href="#Servicos" className="fs-5 text-decoration-none text-black">
-          Serviços
-        </a>
-        <a href="#Sobre" className="fs-5 text-decoration-none text-black">
-          Sobre
-        </a>
+        {/* Botão do menu responsivo */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        {/* Itens do menu */}
+        <div
+          className="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul className="navbar-nav gap-3">
+            <li className="nav-item">
+              <a href="#Inicio" className="nav-link fs-5 text-black">
+                Início
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="#Servicos" className="nav-link fs-5 text-black">
+                Serviços
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="#Sobre" className="nav-link fs-5 text-black">
+                Sobre
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

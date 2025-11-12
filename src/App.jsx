@@ -11,31 +11,42 @@ function App() {
       <Header />
 
       <div className="corpo-site">
-        <div id="Inicio" className="container mt-5 mb-5 d-flex">
-          <div>
-            <h1 className="hero-title">Conecte Empresas e ONGs</h1>
-            <p className="hero-text col-9 fw-medium text-secondary">
-              Gestão de recursos humanitários em regiões vulneráveis do
-              Centro-Oeste Paulista.
-            </p>
+        {/* ===== INÍCIO ===== */}
+        <section id="Inicio" className="container mt-5 mb-5 py-5">
+          <div className="row align-items-center justify-content-center text-center text-md-start">
+            <div className="col-12 col-md-6">
+              <h1 className="hero-title">Conecte Empresas e ONGs</h1>
+              <p className="hero-text fw-medium text-secondary">
+                Gestão de recursos humanitários em regiões vulneráveis do
+                Centro-Oeste Paulista.
+              </p>
+              <a
+                href="https://global-link-six.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-lg btn-outline-primary mt-3"
+              >
+                Conheça a plataforma
+              </a>
+            </div>
 
-            <a
-              href="https://global-link-six.vercel.app/"
-              target="_blank"
-              className="btn btn-lg btn-outline-primary"
-            >
-              Conheça a plataforma
-            </a>
+            <div className="col-12 col-md-6 mt-4 mt-md-0 d-flex justify-content-center">
+              <img
+                src={Parceria}
+                alt="Parceria"
+                className="img-fluid rounded-5 shadow-sm"
+                style={{ maxHeight: "400px" }}
+              />
+            </div>
           </div>
+        </section>
 
-          <img src={Parceria} alt="" height={400} className="mt-5 rounded-5" />
-        </div>
-
-        <div
+        {/* ===== SERVIÇOS ===== */}
+        <section
           id="Servicos"
-          className="container mt-5 d-flex flex-column text-center justify-content-center"
+          className="container mt-5 text-center d-flex flex-column justify-content-center"
         >
-          <div>
+          <div className="mb-4">
             <h1 className="servicos-title fw-medium">Como Funciona</h1>
             <p className="servicos-text text-secondary">
               A GlobalLink conecta ONGs e empresas de forma simples,
@@ -43,58 +54,51 @@ function App() {
             </p>
           </div>
 
-          <div className="d-flex row justify-content-center gap-5">
-            <div className="col-5 col-md-5 bg-body-secondary rounded-3 shadow-sm text-start p-4">
+          <div className="row justify-content-center g-4">
+            <div className="col-12 col-md-5 col-lg-5 bg-body-secondary rounded-3 shadow-sm text-start p-4">
               <i className="bi bi-suit-heart fs-2"></i>
-              <br /> <span className="fs-5 fw-medium">Para ONGs</span> <br />
-              <span className="fw-medium text-secondary">
+              <h5 className="fw-medium mt-2">Para ONGs</h5>
+              <p className="fw-medium text-secondary mb-0">
                 Publique suas necessidades, receba doações de empresas e
                 gerencie recursos com transparência total.
-              </span>
+              </p>
             </div>
 
-            <div className="col-5 col-md-5 bg-body-secondary rounded-3 shadow-sm text-start p-4">
-              <i class="bi bi-building fs-2"></i>
-              <br /> <span className="fs-5 fw-medium">Para Empresas</span>{" "}
-              <br />
-              <span className="fw-medium text-secondary">
+            <div className="col-12 col-md-5 col-lg-5 bg-body-secondary rounded-3 shadow-sm text-start p-4">
+              <i className="bi bi-building fs-2"></i>
+              <h5 className="fw-medium mt-2">Para Empresas</h5>
+              <p className="fw-medium text-secondary mb-0">
                 Identifique oportunidades de impacto social, dirija suas doações
                 e acompanhe o resultado de suas contribuições.
-              </span>
+              </p>
             </div>
 
-            <div className="col-5 col-md-5 bg-body-secondary rounded-3 shadow-sm text-start p-4">
-              <i class="bi bi-lightning-charge fs-2"></i>
-              <br />{" "}
-              <span className="fs-5 fw-medium">
-                Gerenciamento Eficiente
-              </span>{" "}
-              <br />
-              <span className="fw-medium text-secondary">
+            <div className="col-12 col-md-5 col-lg-5 bg-body-secondary rounded-3 shadow-sm text-start p-4">
+              <i className="bi bi-lightning-charge fs-2"></i>
+              <h5 className="fw-medium mt-2">Gerenciamento Eficiente</h5>
+              <p className="fw-medium text-secondary mb-0">
                 Sistema integrado para conectar pedidos de necessidades com
                 ofertas de doações em tempo real.
-              </span>
+              </p>
             </div>
 
-            <div className="col-5 col-md-5 bg-body-secondary rounded-3 shadow-sm text-start p-4">
-              <i class="bi bi-bar-chart-line-fill fs-2"></i>
-              <br /> <span className="fs-5 fw-medium">
-                Impacto Mensurável
-              </span>{" "}
-              <br />
-              <span className="fw-medium text-secondary">
+            <div className="col-12 col-md-5 col-lg-5 bg-body-secondary rounded-3 shadow-sm text-start p-4">
+              <i className="bi bi-bar-chart-line-fill fs-2"></i>
+              <h5 className="fw-medium mt-2">Impacto Mensurável</h5>
+              <p className="fw-medium text-secondary mb-0">
                 Relatórios detalhados sobre o impacto social gerado pelas
                 doações e contribuições realizadas.
-              </span>
+              </p>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div
+        {/* ===== SOBRE ===== */}
+        <section
           id="Sobre"
           className="container mt-5 mb-5 d-flex flex-column text-center justify-content-center"
         >
-          <div>
+          <div className="mb-4">
             <h1 className="sobre-title">Sobre a GlobalLink</h1>
             <p className="sobre-text text-secondary">
               Somos uma plataforma dedicada a conectar ONGs e empresas, criando
@@ -104,37 +108,28 @@ function App() {
             </p>
           </div>
 
-          <div className="d-flex justify-content-center gap-5">
-            <div className="bg-info col-2 rounded-3 p-3">
-              <span className="fw-bolder fs-1 text-light">50+</span>
-              <br />
-              <span className="text-light fw-medium">ONGs Cadastradas</span>
-              <br />
-              <small className="text-light">
-                Organizações gerenciando suas necessidades
-              </small>
+          <div className="row justify-content-center g-4 gap-md-3">
+            <div className="col-10 col-sm-6 col-md-4 col-lg-3 bg-info rounded-3 p-3 shadow-lg text-light">
+              <span className="fw-bolder fs-1">50+</span>
+              <p className="fw-medium mb-1">ONGs Cadastradas</p>
+              <small>Organizações gerenciando suas necessidades</small>
             </div>
 
-            <div className="bg-info col-2 rounded-3 p-3">
-              <span className="fw-bolder fs-1 text-light">60+</span>
-              <br />
-              <span className="text-light fw-medium">Empresas Parceiras</span>
-              <br />
-              <small className="text-light">
-                Contribuindo para causas sociais
-              </small>
+            <div className="col-10 col-sm-6 col-md-4 col-lg-3 bg-info rounded-3 p-3 shadow-lg text-light">
+              <span className="fw-bolder fs-1">60+</span>
+              <p className="fw-medium mb-1">Empresas Parceiras</p>
+              <small>Contribuindo para causas sociais</small>
             </div>
 
-            <div className="bg-info col-2 rounded-3 p-3">
-              <span className="fw-bolder fs-1 text-light">200+</span>
-              <br />
-              <span className="text-light fw-medium">Doações Realizadas</span>
-              <br />
-              <small className="text-light">Impacto social de verdade</small>
+            <div className="col-10 col-sm-6 col-md-4 col-lg-3 bg-info rounded-3 p-3 shadow-lg text-light">
+              <span className="fw-bolder fs-1">200+</span>
+              <p className="fw-medium mb-1">Doações Realizadas</p>
+              <small>Impacto social de verdade</small>
             </div>
           </div>
-        </div>
+        </section>
       </div>
+
       <Footer />
     </>
   );

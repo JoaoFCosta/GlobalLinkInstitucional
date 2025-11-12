@@ -2,39 +2,40 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
-      <div className="footer d-flex justify-content-around align-items-center p-3 mt-5 border-top text-light">
-        <div>
-          <span className="fw-medium fs-4">
-            <i className="bi bi-globe fs-1 me-2"></i>GlobalLink
-          </span>
-          <br />
-          <span className="small fw-lighter">
-            Conectando empresas globalmente com soluções inovadoras.
-          </span>
-        </div>
+    <footer className="bg-dark text-light mt-5 border-top">
+      <div className="container py-4">
+        <div className="row gy-4 text-center text-lg-start align-items-center">
+          {/* Logo e descrição */}
+          <div className="col-12 col-lg-4">
+            <span className="fw-medium fs-4 d-flex align-items-center justify-content-center justify-content-lg-start">
+              <i className="bi bi-globe fs-1 me-2 text-primary"></i>GlobalLink
+            </span>
+            <p className="small fw-lighter mb-0 mt-2">
+              Conectando empresas globalmente com soluções inovadoras.
+            </p>
+          </div>
 
-        <div>
-          <span>© 2025 GlobalLink. Todos os direitos reservados.</span>
-        </div>
+          {/* Direitos autorais */}
+          <div className="col-12 col-lg-4 text-center">
+            <span>© 2025 GlobalLink. Todos os direitos reservados.</span>
+          </div>
 
-        <div className="text-light">
-          <span className="fw-medium fs-4">Contato</span>
-          <br />
-          <span className="fw-medium text-secondary">
-            <i class="bi bi-envelope"></i> info@globallink.com
-          </span>
-          <br />
-          <span className="fw-medium text-secondary">
-            <i class="bi bi-telephone"></i> +55 14 99999-9999
-          </span>
-          <br />
-          <span className="fw-medium text-secondary">
-            <i class="bi bi-geo-alt"></i> Jaú, São Paulo
-          </span>
+          {/* Contato */}
+          <div className="col-12 col-lg-4">
+            <span className="fw-medium fs-4 d-block mb-2">Contato</span>
+            <p className="mb-1 text-secondary">
+              <i className="bi bi-envelope me-2"></i>info@globallink.com
+            </p>
+            <p className="mb-1 text-secondary">
+              <i className="bi bi-telephone me-2"></i>+55 14 99999-9999
+            </p>
+            <p className="mb-0 text-secondary">
+              <i className="bi bi-geo-alt me-2"></i>Jaú, São Paulo
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
