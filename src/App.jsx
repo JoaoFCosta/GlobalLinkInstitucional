@@ -28,6 +28,14 @@ function App() {
               >
                 Conheça a plataforma
               </a>
+
+              <a
+                href="../public/Manual do Usuario-1.pdf"
+                className="btn btn-lg btn-outline-danger mt-3 ms-5"
+                download
+              >
+                Manual do Usuário
+              </a>
             </div>
 
             <div className="col-12 col-md-6 mt-4 mt-md-0 d-flex justify-content-center">
