@@ -30,7 +30,7 @@ function App() {
               </a>
 
               <a
-                href="/Manual do Usuario-1.pdf"
+                href="/Manual-do-Usuario-1.pdf"
                 className="btn btn-lg btn-outline-danger mt-3 ms-5"
                 target="_blank"
               >
