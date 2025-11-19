@@ -32,7 +32,7 @@ function App() {
               <a
                 href="../public/Manual do Usuario-1.pdf"
                 className="btn btn-lg btn-outline-danger mt-3 ms-5"
-                download
+                target="_blank"
               >
                 Manual do Usuário
               </a>
